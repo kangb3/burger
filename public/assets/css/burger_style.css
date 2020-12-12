@@ -1,0 +1,77 @@
+* {
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+#logo-name {
+  position: relative;
+  color: black;
+  background-color: white;
+  z-index: 2;
+}
+
+.burger-icon {
+  margin: 20 auto;
+  max-height: 200px;
+}
+
+table {
+  table-layout: fixed;
+  min-width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: red;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+
+textarea {
+  display: block;
+  margin: 10px auto;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+.new-burger {
+  margin: 10px auto;
+  width: 70%;
+}
+
+.new-burger > button {
+  width: 336px;
+}
+
+.remove {
+  width: 100%;
+}
+
+@media screen and (max-width: 860px) {
+  table {
+    width: 100%;
+    border-radius: 0;
+  }
+  .new-burger {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}
