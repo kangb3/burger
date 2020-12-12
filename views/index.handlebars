@@ -1,0 +1,36 @@
+<table>
+  <tr>
+    <h4>Order from the menu or create your own!</h4>
+  </tr>
+  <tr>
+    <th>Burger to devour</th>
+    <th>Devoured</th>
+    <th>Devour/Order</th>
+    <th>Delete</th>
+  </tr>
+
+  {{#each burgers}}
+  {{#if devoured}}
+  <tr>
+
+    <td>---</td>
+
+    <td>{{burger_name}}</td>
+
+    <td><button type="button" class="btn order burger" data-id="{{id}}">Re-order</button></td>
+        <td><button type="button" class="btn remove" data-id="{{id}}"><img src="/assets/images/trash.svg" alt="remove"></button></td>
+
+  </tr>
+  {{else}}
+  <tr>
+      
+    <td>{{burger_name}}</td>
+    <td>---</td>
+    <td><button type="button" class="btn eat burger" data-id="{{id}}">Devour</button></td>
+    <td><button type="button" class="btn remove" data-id="{{id}}"><img src="/assets/images/trash.svg" alt="remove"></button></td>
+  </tr>
+
+  {{/if}}
+  {{/each}}
+
+</table>
